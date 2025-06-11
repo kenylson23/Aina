@@ -90,9 +90,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-400">
-            &copy; 2024 Gloria's Cakes. Todos os direitos reservados.
-          </p>
+          <p className="text-gray-400">© 2025 Kenylson Lourenço. Todos os direitos reservados.</p>
         </motion.div>
       </div>
     </footer>
