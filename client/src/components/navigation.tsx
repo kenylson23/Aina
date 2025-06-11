@@ -44,6 +44,11 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
+            <img 
+              src="@assets/a-logo-design-featuring-the-text-glorias_HdTJEo6rQNmgpntmbYwFYQ_Gv_ag1nDR2ejuko--cwkow_1749652189569.jpeg"
+              alt="Gloria's Cakes Logo"
+              className="h-12 w-auto mr-3"
+            />
             <span className="text-2xl font-playfair font-bold text-deep-pink">
               Gloria's Cakes
             </span>
