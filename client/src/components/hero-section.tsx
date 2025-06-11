@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ShoppingCart, Phone, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/a-logo-design-featuring-the-text-glorias_HdTJEo6rQNmgpntmbYwFYQ_Gv_ag1nDR2ejuko--cwkow_1749652189569.jpeg";
 
 export default function HeroSection() {
   const scrollToProducts = () => {
@@ -29,15 +30,22 @@ export default function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h1
-            className="text-5xl md:text-7xl font-playfair font-bold text-gray-800 mb-6"
+          <motion.div
+            className="flex flex-col items-center lg:items-start mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Gloria's{" "}
-            <span className="text-primary-pink">Cakes</span>
-          </motion.h1>
+            <img 
+              src={logoImage}
+              alt="Gloria's Cakes Logo"
+              className="h-24 w-auto mb-4"
+            />
+            <h1 className="text-5xl md:text-7xl font-playfair font-bold text-gray-800 text-center lg:text-left">
+              Gloria's{" "}
+              <span className="text-primary-pink">Cakes</span>
+            </h1>
+          </motion.div>
 
           <motion.p
             className="text-2xl md:text-3xl font-playfair text-deep-pink mb-8 italic"
